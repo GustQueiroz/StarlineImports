@@ -1,0 +1,17 @@
+.full-header {
+  width: 100vh;
+}
+.first-header {
+  display: flex;
+  align-items: center;
+}
+.logo-image {
+  width: 8rem;
+  height: 8rem;
+}
+.search-input {
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+  height: 2.5rem;
+  border: none;
+}
