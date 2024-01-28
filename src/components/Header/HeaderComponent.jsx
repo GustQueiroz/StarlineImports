@@ -78,7 +78,11 @@ const HeaderComponent = () => {
               />
             </g>
           </svg>
-          <div className="cart-text">Carrinho</div>
+          <div className="cart-text">
+            <Link className="cart-text" to="/carrinho">
+              Carrinho
+            </Link>
+          </div>
         </div>
       </header>
       <div className="second-header row g-3">
