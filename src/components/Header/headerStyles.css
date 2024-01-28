@@ -50,6 +50,7 @@
   list-style: none;
 }
 .second-text {
+  font-weight: 600;
   color: #fff;
   cursor: pointer;
 }
