@@ -1,12 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import LogoBig from "../../assets/logoBig.png";
+import LogoBigWhite from "../../assets/logoBigWhite.png";
 import "./footer.css";
 
 const Footer = () => {
   return (
     <div className="footer-body row">
-      <img className="logo-footer col-2" src={LogoBig} />
+      <img className="logo-footer" src={LogoBigWhite} />
       <div className="footer-text row col-9">
         <div className="help col-3">
           <div className="help-title">Precisa de Ajuda?</div>
@@ -24,8 +24,22 @@ const Footer = () => {
             <div className="text">Midias</div>
           </div>
         </div>
-        <div className="more col-2">Mais Informações</div>
-        <div className="social-media col-2">Redes Sociais</div>
+        <div className="more col-3">
+          <div className="more-title">Mais Informações</div>
+          <div className="more-text">
+            <div className="text">Termos e Condições</div>
+            <div className="text">Politica de Privacidade</div>
+            <div className="text">Politica de Entregas</div>
+          </div>
+        </div>
+        <div className="social-media col-2">
+          <div className="social-media-title">Redes Sociais</div>
+          <div className="social-media-text">
+            <div className="text">Tiktok</div>
+            <div className="text">Instagram</div>
+            <div className="text">Twitter</div>
+          </div>
+        </div>
       </div>
     </div>
   );

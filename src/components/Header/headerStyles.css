@@ -4,7 +4,7 @@
 }
 .logo-image {
   width: 9rem;
-  height: 9rem;
+  height: 10rem;
 }
 .search-input {
   border-radius: 10px;
@@ -35,7 +35,7 @@
   color: rgb(135, 135, 135);
 }
 .second-header {
-  background-color: black;
+  background-color: #1e3c64;
 }
 .second-header-text {
   display: flex;

@@ -5,7 +5,9 @@
   justify-content: center;
 }
 .productList-Text {
+  letter-spacing: 1px;
   margin-bottom: 2rem;
-  color: black;
+  font-size: 24px;
+  color: #1e3c64;
   font-weight: 700;
 }
