@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LogoStarlineBlue from "../../assets/logoStarlineBlue.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./headerStyles.css";
@@ -51,7 +52,11 @@ const HeaderComponent = () => {
               stroke-linejoin="round"
             />
           </svg>
-          <div className="signIn-text">Entrar/Cadastre-se</div>
+          <div className="signIn-text">
+            <Link className="signIn-text" to="/entrar">
+              Entrar/Cadastre-se
+            </Link>
+          </div>
         </div>
         <div className="cart col-2">
           <svg

@@ -20,6 +20,10 @@
 .signIn-icon {
   margin-right: 10px;
 }
+.signIn-text {
+  color: #1e3c64;
+  text-decoration: none;
+}
 .cart {
   cursor: pointer;
   display: flex;
