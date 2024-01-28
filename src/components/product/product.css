@@ -7,6 +7,10 @@
   width: 15rem;
   height: 20rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.product:hover {
+  box-shadow: #25456f 0px 7px 30px 0px;
 }
 .product-image {
   margin-top: 1rem;

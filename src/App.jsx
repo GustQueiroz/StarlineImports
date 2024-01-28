@@ -10,8 +10,8 @@ function App() {
     <div className="row">
       <HeaderComponent />
       <ComponentImage />
-      <ProductList />
-      <ProductList />
+      <ProductList listTitle="Promoção Relampago" />
+      <ProductList listTitle="Produtos mais Vendidos" />
       <Footer />
     </div>
   );

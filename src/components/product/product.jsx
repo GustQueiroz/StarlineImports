@@ -2,15 +2,26 @@ import React from "react";
 import CamisaSantos from "../../assets/camisaSantos.webp";
 import "./product.css";
 
-const Product = () => {
+export function Product() {
+  const productInfo = {
+    id: 1,
+    name: "Camisa Santos II 23/24",
+    price: "134,90",
+    oldPrice: "154,90",
+  };
+
   return (
     <div className="product">
-      <img className="product-image" src={CamisaSantos} />
-      <label className="product-name">Camisa Santos 23/24</label>
+      <img
+        className="product-image"
+        src={CamisaSantos}
+        alt={productInfo.name}
+      />
+      <label className="product-name">{productInfo.name}</label>
       <div></div>
-      <label className="product-price">R$129,90</label>
+      <label className="product-price">R${productInfo.price}</label>
     </div>
   );
-};
+}
 
 export default Product;
