@@ -3,14 +3,24 @@
 }
 .form-control {
   background-color: #e9e9e9;
-  border-color: #39ace55c;
+  border-radius: 12px;
+  border: none;
   border-width: 2px;
 }
-
 .input {
   background-color: #e9e9e9;
-  border-color: #39ace55c;
+  border-radius: 12px;
+  border: none;
   border-width: 2px;
+}
+.signIn-image {
+  width: 18rem;
+  height: 20rem;
+}
+.button {
+  color: #fff;
+  margin-top: 35px;
+  background-color: #217b29;
 }
 .centered {
   display: flex;
