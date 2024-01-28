@@ -1,0 +1,11 @@
+.full-list {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productList-Text {
+  margin-bottom: 2rem;
+  color: black;
+  font-weight: 700;
+}

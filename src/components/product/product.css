@@ -1,0 +1,24 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  width: 15rem;
+  height: 20rem;
+}
+.product-image {
+  margin-top: 1rem;
+  width: 13rem;
+  height: 13rem;
+}
+.product-name {
+  margin-top: 0.5rem;
+  color: black;
+}
+.product-price {
+  margin-top: 0.5rem;
+  font-size: 24px;
+  margin-right: 70px;
+  color: black;
+}

@@ -1,0 +1,53 @@
+.first-header {
+  display: flex;
+  align-items: center;
+}
+.logo-image {
+  width: 9rem;
+  height: 9rem;
+}
+.search-input {
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+  height: 2.5rem;
+  border: solid rgb(206, 206, 206) 0.5px;
+}
+.signIn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.signIn-icon {
+  margin-right: 10px;
+}
+.cart {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.cart-icon {
+  margin-right: 10px;
+}
+.cart-text:hover {
+  color: rgb(135, 135, 135);
+}
+.signIn-text:hover {
+  color: rgb(135, 135, 135);
+}
+.second-header {
+  background-color: black;
+}
+.second-header-text {
+  display: flex;
+  list-style: none;
+}
+.second-text {
+  color: #fff;
+  cursor: pointer;
+}
+.second-text:hover {
+  color: #aaaaaa;
+}
+.input-container {
+  display: flex;
+}
