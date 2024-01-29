@@ -3,26 +3,17 @@ import "./productList.css";
 import Product from "../product/product";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const ProductList = ({ listTitle }) => {
+const ProductList = ({ listTitle, products }) => {
   return (
     <div className="row full-list">
       <label className="col-1"></label>
       <label className="col-10 productList-Text">{listTitle}</label>
-      <div className="col-2">
-        <Product />
-      </div>
-      <div className="col-2">
-        <Product />
-      </div>
-      <div className="col-2">
-        <Product />
-      </div>
-      <div className="col-2">
-        <Product />
-      </div>
-      <div className="col-1">
-        <Product />
-      </div>
+
+      {products.map((product, index) => (
+        <div key={index} className="col-2">
+          <Product productInfo={product} />
+        </div>
+      ))}
     </div>
   );
 };
