@@ -7,19 +7,23 @@ export const AreaComponentImage = styled.div`
 
   .component_image {
     width: 100%;
-    height: 100%;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     transition: all 0.8s ease;
     left: 100%;
-  }
 
-  img {
-    min-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-size: cover;
+    img {
+      min-width: 100%;
+      object-fit: cover;
+      height: 400px;
+    }
+  }
+  @media (max-width: 576px) {
+    .component_image img {
+      clip-path: inset(17% 0 18% 0);
+    }
   }
 `;

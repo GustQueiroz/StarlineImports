@@ -6,36 +6,40 @@ import "./headerStyles.css";
 const HeaderComponent = () => {
   return (
     <div className="full-header">
-      <header className="first-header row">
-        <div className="col-xl-1 col-sm-1"></div>
-        <div className="col-xl-3 col-sm-3">
+      <header className="first-header row col-lg-12">
+        <div className="col-xl-1 col-1"></div>
+        <div className="col-xl-1 col-sm-3 d-flex align-items-center justify-content-center col-12">
           <img className="logo-image" src={LogoStarlineBlue} />
         </div>
-        <div className="col-lg-3 col-sm-1 input-container">
-          <div className="col-3 col-sm-1"></div>
-          <input className="search-input col-9"></input>
+        <div className="row col-lg-4">
+          <div className="col-lg-12 d-flex flex-row justify-content-center align-items-center">
+            <div className="col-xl-1 col-0">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Menu / Hamburger_MD">
+                  <path
+                    id="Vector"
+                    d="M5 17H19M5 12H19M5 7H19"
+                    stroke="#1e3c64"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div className="input-container col-12 col-9">
+              <div className="col-3 col-sm-1"></div>
+              <input className="search-input col-xl-12 col-8"></input>
+            </div>
+          </div>
         </div>
-        <div className="col-xl-1">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Menu / Hamburger_MD">
-              <path
-                id="Vector"
-                d="M5 17H19M5 12H19M5 7H19"
-                stroke="#1e3c64"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </g>
-          </svg>
-        </div>
-        <div className="signIn col-xl-2">
+        <div className="signIn col-xl-4 d-none d-sm-block ">
           <svg
             className="signIn-icon"
             width="16"
@@ -58,7 +62,7 @@ const HeaderComponent = () => {
             </Link>
           </div>
         </div>
-        <div className="cart col-xl-2">
+        <div className="cart col-xl-2 d-none d-sm-block">
           <svg
             className="cart-icon"
             width="24"
@@ -85,16 +89,16 @@ const HeaderComponent = () => {
           </div>
         </div>
       </header>
-      <div className="second-header row g-3">
-        <div className="col-12">
+      <div className="second-header d-none d-sm-block row g-3">
+        <div className="col-lg-12 col-sm-8">
           <ul className="second-header-text">
             <div className="col-xl-3"></div>
-            <li className="second-text col-xl-1">Futebol</li>
-            <li className="second-text col-xl-1">Basquete</li>
-            <li className="second-text col-xl-1">Formula 1</li>
-            <li className="second-text col-xl-1">Roupas NFL</li>
-            <li className="second-text col-xl-1">Acessórios</li>
-            <li className="second-text col-xl-1">Bolas</li>
+            <li className="second-text col-xl-1 col-12">Futebol</li>
+            <li className="second-text col-xl-1 col-12">Basquete</li>
+            <li className="second-text col-xl-1 col-12">Formula 1</li>
+            <li className="second-text col-xl-1 col-12">Roupas NFL</li>
+            <li className="second-text col-xl-1 col-12">Acessórios</li>
+            <li className="second-text col-xl-1 col-12">Bolas</li>
           </ul>
         </div>
       </div>

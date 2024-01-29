@@ -1,16 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./productList.css";
 import Product from "../product/product";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ProductList = ({ listTitle, products }) => {
-  return (
-    <div className="row full-list">
-      <label className="col-1"></label>
-      <label className="col-10 productList-Text">{listTitle}</label>
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
 
-      {products.map((product, index) => (
-        <div key={index} className="col-2">
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const colClass = isSmallScreen
+    ? "d-flex align-items-center justify-content-center col-12"
+    : "col-lg-2";
+
+  const textClass = `col-12 productList-Text d-flex align-items-center justify-content-center${
+    isSmallScreen ? " mb-3" : ""
+  }`;
+
+  return (
+    <div
+      className={`row full-list ${
+        isSmallScreen ? "justify-content-center" : ""
+      }`}
+    >
+      <label className={textClass}>{listTitle}</label>
+
+      {products.slice(0, isSmallScreen ? 3 : 5).map((product, index) => (
+        <div
+          key={index}
+          className={`col-md-4 col-sm-12 mb-3 ${colClass} text-center`}
+        >
           <Product productInfo={product} />
         </div>
       ))}
