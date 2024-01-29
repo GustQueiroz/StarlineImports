@@ -12,8 +12,8 @@ const HeaderComponent = () => {
           <img className="logo-image" src={LogoStarlineBlue} />
         </div>
         <div className="row col-lg-4">
-          <div className="col-lg-12 d-flex flex-row justify-content-center align-items-center">
-            <div className="col-xl-1 col-0">
+          <div className="col-lg-12 d-flex flex-row justify-content-center align-items-center col-11">
+            <div className="col-xl-1 header-mini-icon">
               <svg
                 width="24"
                 height="24"
@@ -33,9 +33,9 @@ const HeaderComponent = () => {
                 </g>
               </svg>
             </div>
-            <div className="input-container col-12 col-9">
+            <div className="input-container col-12 col-9 header-mini-input">
               <div className="col-3 col-sm-1"></div>
-              <input className="search-input col-xl-12 col-8"></input>
+              <input className="search-input col-xl-12 col-8 "></input>
             </div>
           </div>
         </div>
