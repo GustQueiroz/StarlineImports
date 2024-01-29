@@ -7,15 +7,15 @@ const HeaderComponent = () => {
   return (
     <div className="full-header">
       <header className="first-header row">
-        <div className="col-1"></div>
-        <div className="col-3">
+        <div className="col-xl-1 col-sm-1"></div>
+        <div className="col-xl-3 col-sm-3">
           <img className="logo-image" src={LogoStarlineBlue} />
         </div>
-        <div className="col-3 input-container">
-          <div className="col-3"></div>
+        <div className="col-lg-3 col-sm-1 input-container">
+          <div className="col-3 col-sm-1"></div>
           <input className="search-input col-9"></input>
         </div>
-        <div className="col-1">
+        <div className="col-xl-1">
           <svg
             width="24"
             height="24"
@@ -35,7 +35,7 @@ const HeaderComponent = () => {
             </g>
           </svg>
         </div>
-        <div className="signIn col-2">
+        <div className="signIn col-xl-2">
           <svg
             className="signIn-icon"
             width="16"
@@ -58,7 +58,7 @@ const HeaderComponent = () => {
             </Link>
           </div>
         </div>
-        <div className="cart col-2">
+        <div className="cart col-xl-2">
           <svg
             className="cart-icon"
             width="24"
@@ -88,13 +88,13 @@ const HeaderComponent = () => {
       <div className="second-header row g-3">
         <div className="col-12">
           <ul className="second-header-text">
-            <div className="col-3"></div>
-            <li className="second-text col-1">Futebol</li>
-            <li className="second-text col-1">Basquete</li>
-            <li className="second-text col-1">Formula 1</li>
-            <li className="second-text col-1">Roupas NFL</li>
-            <li className="second-text col-1">Acessórios</li>
-            <li className="second-text col-1">Bolas</li>
+            <div className="col-xl-3"></div>
+            <li className="second-text col-xl-1">Futebol</li>
+            <li className="second-text col-xl-1">Basquete</li>
+            <li className="second-text col-xl-1">Formula 1</li>
+            <li className="second-text col-xl-1">Roupas NFL</li>
+            <li className="second-text col-xl-1">Acessórios</li>
+            <li className="second-text col-xl-1">Bolas</li>
           </ul>
         </div>
       </div>
