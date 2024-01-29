@@ -17,7 +17,9 @@ const SignInComponent = () => {
       <form className="row full-signIn-container">
         <div className="col-lg-12 col-md-10 col-sm-12">
           <label className="col-lg-2"></label>
-          <img className="signIn-image" src={LogoStarlineBlue} />
+          <Link to="/">
+            <img className="signIn-image" src={LogoStarlineBlue} />
+          </Link>
         </div>
         <div className="col-lg-12 col-md-10 col-sm-12">
           <label htmlFor="inputEmail" className="form-label">
