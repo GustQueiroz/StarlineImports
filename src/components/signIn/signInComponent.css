@@ -6,6 +6,8 @@
   border-radius: 12px;
   border: none;
   border-width: 2px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 .input {
   background-color: #e9e9e9;
@@ -19,8 +21,22 @@
 }
 .button {
   color: #fff;
-  margin-top: 35px;
+  margin-top: 40px;
   background-color: #217b29;
+}
+.register-text {
+  color: #1e3c64;
+  text-decoration: none;
+  opacity: 80%;
+  margin-top: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.register-text:hover {
+  opacity: 100%;
+}
+.button:hover {
+  background-color: #18591d;
 }
 .centered {
   display: flex;

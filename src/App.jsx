@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import SignIn from "./pages/signIn/singIn";
 import ProductPage from "./pages/productPage";
 import Cart from "./pages/cart";
+import Register from "./pages/register/register";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/entrar" element={<SignIn />} />
         <Route path="/produto" element={<ProductPage />} />
         <Route path="/carrinho" element={<Cart />} />
+        <Route path="/cadastrar" element={<Register />} />
       </Routes>
     </Router>
   );

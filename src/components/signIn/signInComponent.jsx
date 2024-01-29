@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LogoStarlineBlue from "../../assets/logoStarlineBlue.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./signInComponent.css";
@@ -6,7 +7,7 @@ import "./signInComponent.css";
 const SignInComponent = () => {
   return (
     <div>
-      <form className="row g-3">
+      <form className="row">
         <div className="col-lg-12 col-md-10 col-sm-12">
           <label className="col-lg-2"></label>
           <img className="signIn-image" src={LogoStarlineBlue} />
@@ -34,7 +35,9 @@ const SignInComponent = () => {
           </button>
         </div>
         <div className="col-lg-7 col-md-10 col-sm-12 centered">
-          <h5>Não tem conta? Cadastre-se</h5>
+          <Link to="/cadastrar" className="register-text">
+            <h5>Não tem conta? Cadastre-se</h5>
+          </Link>
         </div>
       </form>
     </div>

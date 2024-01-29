@@ -5,11 +5,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./SignInHeaderStyles.css";
 const SignInHeaderComponent = () => {
   return (
-    <div className="full-header">
+    <div className="header">
       <header className="first-header row">
         <div className="col-1"></div>
         <div className="col-1">
-          <img className="logo-image" src={LogoBigWhite} />
+          <Link to="/">
+            <img className="signInHeader-image" src={LogoBigWhite} />
+          </Link>
         </div>
       </header>
     </div>

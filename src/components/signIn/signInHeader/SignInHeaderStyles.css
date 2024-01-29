@@ -1,52 +1,10 @@
-.first-header {
+.header {
   background-color: #1e3c64;
   display: flex;
   align-items: center;
 }
-.logo-image {
+.signInHeader-image {
   padding: 20px;
   width: 9rem;
   height: 6rem;
-}
-.search-input {
-  border-radius: 10px;
-  background-color: rgb(238, 238, 238);
-  height: 2.5rem;
-  border: solid rgb(206, 206, 206) 0.5px;
-}
-.signIn {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.signIn-icon {
-  margin-right: 10px;
-}
-.signIn-text {
-  color: #1e3c64;
-  text-decoration: none;
-}
-.cart-text {
-  color: #1e3c64;
-  text-decoration: none;
-}
-.cart {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-.cart-icon {
-  margin-right: 10px;
-}
-.cart-text:hover {
-  color: rgb(135, 135, 135);
-}
-.signIn-text:hover {
-  color: rgb(135, 135, 135);
-}
-.second-text:hover {
-  color: #aaaaaa;
-}
-.input-container {
-  display: flex;
 }
