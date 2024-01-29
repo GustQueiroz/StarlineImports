@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="footer-body row">
       <img className="logo-footer" src={LogoBigWhite} />
-      <div className="footer-text row col-9">
-        <div className="help col-3">
+      <div className="footer-text row col-12 col-md-9">
+        <div className="help col-12 col-md-3">
           <div className="help-title">Precisa de Ajuda?</div>
           <div className="help-text">
             <div className="text">Entrar em contato</div>
@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="text">Reembolso</div>
           </div>
         </div>
-        <div className="company col-3">
+        <div className="company col-12 col-md-3">
           <div className="company-title">Sobre a Empresa</div>
           <div className="company-text">
             <div className="text">Sobre nós</div>
@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="text">Midias</div>
           </div>
         </div>
-        <div className="more col-3">
+        <div className="more col-12 col-md-3">
           <div className="more-title">Mais Informações</div>
           <div className="more-text">
             <div className="text">Termos e Condições</div>
@@ -32,7 +32,7 @@ const Footer = () => {
             <div className="text">Politica de Entregas</div>
           </div>
         </div>
-        <div className="social-media col-2">
+        <div className="social-media col-12 col-md-2">
           <div className="social-media-title">Redes Sociais</div>
           <div className="social-media-text">
             <div className="text">Tiktok</div>

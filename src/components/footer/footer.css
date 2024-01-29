@@ -8,6 +8,7 @@
   height: 25rem;
   margin-top: 5rem;
 }
+
 .footer-text {
   display: flex;
   align-items: center;
@@ -67,4 +68,32 @@
 }
 .social-media-text {
   margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+  .footer-body {
+    height: auto;
+    padding: 2rem;
+  }
+  .help-title {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .help-text {
+    margin-top: 3px;
+    margin-bottom: 15px;
+  }
+  .company-text {
+    margin-top: 3px;
+    margin-bottom: 15px;
+  }
+  .more-text {
+    margin-top: 3px;
+    margin-bottom: 15px;
+  }
+  .social-media-text {
+    margin-top: 3px;
+    margin-bottom: 15px;
+  }
 }
