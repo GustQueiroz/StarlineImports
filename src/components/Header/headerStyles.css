@@ -6,11 +6,24 @@
   width: 9rem;
   height: 10rem;
 }
+.loupe-input {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="darkGray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 40px;
+  color: black;
+}
 .search-input {
+  color: black;
   border-radius: 10px;
   background-color: rgb(238, 238, 238);
   height: 2.5rem;
   border: solid rgb(206, 206, 206) 0.5px;
+}
+.search-input::placeholder {
+  font-size: 14px;
+  color: #999;
+  padding-left: 10px;
 }
 .signIn {
   display: flex;
@@ -69,5 +82,29 @@
   }
   .header-mini-input {
     margin-right: 35px;
+  }
+  .signIn-mini {
+    display: none;
+  }
+  .cart-mini {
+    display: none;
+  }
+  .header-big-icon {
+    display: flex;
+  }
+  .search-input::placeholder {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+}
+@media (min-width: 997px) {
+  .header-big-icon {
+    display: none;
+  }
+  .signIn-big {
+    margin-left: 120px;
+  }
+  .first-header {
+    width: 100%;
   }
 }

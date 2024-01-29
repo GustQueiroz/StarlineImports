@@ -6,14 +6,13 @@ import "./headerStyles.css";
 const HeaderComponent = () => {
   return (
     <div className="full-header">
-      <header className="first-header row col-lg-12">
-        <div className="col-lg-1 col-1"></div>
-        <div className="col-lg-1 col-sm-3 d-flex align-items-center justify-content-center col-12">
+      <header className="first-header row col-lg-8">
+        <div className="col-lg-3 col-sm-3 d-flex align-items-center justify-content-center col-12">
           <img className="logo-image" src={LogoStarlineBlue} />
         </div>
         <div className="row col-lg-4">
-          <div className="col-lg-12 d-flex flex-row justify-content-center align-items-center col-11">
-            <div className="col-lg-1 header-mini-icon">
+          <div className="col-xxl-12 col-xl-11 col-lg-10 col-md-8 d-flex flex-row justify-content-center align-items-center col-11">
+            <div className="col-lg-1 header-mini-icon header-big-icon">
               <svg
                 width="24"
                 height="24"
@@ -33,13 +32,17 @@ const HeaderComponent = () => {
                 </g>
               </svg>
             </div>
-            <div className="input-container col-12 col-9 header-mini-input">
-              <div className="col-3 col-sm-1"></div>
-              <input className="search-input col-lg-12 col-8 "></input>
+            <div className="input-container col-lg-8 col-12 header-mini-input">
+              <div className="col-lg-6 col-3 col-sm-1"></div>
+              <input
+                type="text"
+                placeholder="O que você procura?"
+                className="search-input loupe-input col-lg-12 col-8"
+              ></input>
             </div>
           </div>
         </div>
-        <div className="signIn col-lg-4 d-none d-sm-block ">
+        <div className="signIn signIn-mini signIn-big col-xl-2 col-lg-2">
           <svg
             className="signIn-icon"
             width="16"
@@ -62,7 +65,7 @@ const HeaderComponent = () => {
             </Link>
           </div>
         </div>
-        <div className="cart col-lg-2 d-none d-sm-block">
+        <div className="cart cart-mini col-lg-2">
           <svg
             className="cart-icon"
             width="24"
