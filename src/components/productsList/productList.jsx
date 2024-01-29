@@ -4,11 +4,28 @@ import Product from "../product/product";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ProductList = ({ listTitle, products }) => {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1265);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768);
+      setIsSmallScreen(window.innerWidth < 1265);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const [isMediumScreen, setIsMediumScreen] = useState(
+    window.innerWidth < 1345
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMediumScreen(window.innerWidth < 1345);
     };
 
     window.addEventListener("resize", handleResize);
@@ -35,14 +52,16 @@ const ProductList = ({ listTitle, products }) => {
     >
       <label className={textClass}>{listTitle}</label>
 
-      {products.slice(0, isSmallScreen ? 3 : 5).map((product, index) => (
-        <div
-          key={index}
-          className={`col-md-4 col-sm-12 mb-3 ${colClass} text-center`}
-        >
-          <Product productInfo={product} />
-        </div>
-      ))}
+      {products
+        .slice(0, isSmallScreen ? 3 : isMediumScreen ? 4 : 5)
+        .map((product, index) => (
+          <div
+            key={index}
+            className={`col-md-4 col-sm-12 mb-3 ${colClass} text-center`}
+          >
+            <Product productInfo={product} />
+          </div>
+        ))}
     </div>
   );
 };

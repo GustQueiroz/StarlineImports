@@ -11,3 +11,8 @@
   color: #1e3c64;
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .full-list {
+    margin-left: 5px;
+  }
+}
