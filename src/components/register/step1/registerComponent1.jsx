@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MaskedInput from "react-input-mask";
 import { useState } from "react";
 import LogoStarlineBlue from "../../../assets/logoStarlineBlue.png";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -28,7 +29,7 @@ const RegisterComponent1 = () => {
           </Link>
         </div>
         <div className="col-lg-12 col-md-10 col-sm-12">
-          <label htmlFor="inputEmail" className="form-label">
+          <label htmlFor="inputName" className="form-label">
             Nome Completo
           </label>
           <input type="text" className="form-control" id="inputEmail" />
@@ -43,7 +44,12 @@ const RegisterComponent1 = () => {
           <label htmlFor="inputEmail" className="form-label">
             CPF
           </label>
-          <input type="text" className="form-control" id="inputEmail" />
+          <MaskedInput
+            mask="999.999.999-99"
+            type="text"
+            className="form-control"
+            id="inputEmail"
+          />
         </div>
         <div className="col-lg-12 col-md-10 col-sm-12">
           <label htmlFor="inputSenha" className="form-label">

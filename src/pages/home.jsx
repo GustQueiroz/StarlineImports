@@ -17,6 +17,7 @@ function Home() {
     {
       id: 2,
       name: "Camisa II Santos 22/23",
+      oldPrice: "144,90",
       price: "124,90",
       image:
         "https://acdn.mitiendanube.com/stores/001/862/193/products/camisa-santos-ii-2021-2022-branca-e-preta-umbro-masculina-marinho-11-a7cb8e996c65e1297a16220503905657-640-01-d490652b9f4c5f094f16317025565944-640-0.jpg",
@@ -24,6 +25,7 @@ function Home() {
     {
       id: 3,
       name: "Camisa Santos 23/24",
+      oldPrice: "134,90",
       price: "124,90",
       image:
         "https://images.tcdn.com.br/img/img_prod/1028923/camisa_umbro_santos_oficial_1_2023_torcedor_pele_8509_1_5234583ea4cc07afba5c50fe579ce69e.jpg",
@@ -31,7 +33,8 @@ function Home() {
     {
       id: 4,
       name: "Camisa III Man City 23/24",
-      price: "124,90",
+      oldPrice: "134,90",
+      price: "144,90",
       image:
         "https://images.tcdn.com.br/img/img_prod/638286/camisa_manchester_city_2024_uniforme_3_jogador_dry_cell_9853_1_6d473365f2afec417d3ad52f8e60b802.jpg",
     },

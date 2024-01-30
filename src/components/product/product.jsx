@@ -3,7 +3,9 @@ import "./product.css";
 
 const Product = ({ productInfo }) => {
   const hasOldPrice =
-    productInfo.oldPrice !== undefined && productInfo.oldPrice !== null;
+    productInfo.oldPrice !== undefined &&
+    productInfo.oldPrice !== null &&
+    parseFloat(productInfo.oldPrice) > parseFloat(productInfo.price);
 
   return (
     <div className="product">
@@ -14,7 +16,7 @@ const Product = ({ productInfo }) => {
       />
       <label className="product-name">{productInfo.name}</label>
       <div></div>
-      {productInfo.oldPrice && (
+      {hasOldPrice && (
         <label className="productOldPrice">R${productInfo.oldPrice}</label>
       )}
       <label className={`product-price ${!hasOldPrice ? "productMargin" : ""}`}>
