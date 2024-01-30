@@ -12,7 +12,7 @@ function Home() {
     ProductData[4],
     ProductData[6],
     ProductData[10],
-    ProductData[0],
+    ProductData[2],
   ];
   const selectedProducts = [
     ProductData[1],
