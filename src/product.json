@@ -53,6 +53,7 @@
     "oldPrice": "139,90",
     "price": "114,90",
     "image": "https://acdn.mitiendanube.com/stores/003/164/010/products/home-frente1-7de76489cdaf0de1e516848692252956-1024-1024.png",
+    "description": "Camisa Flamengo modelo torcedor 23/24. Desenvolvida pela Adidas, a camisa I do Flamengo 2023, é perfeita para os torcedores fanáticos demonstrem toda a sua paixão pelo Mengão nas arquibancadas e nos momentos casuais. O manto é feito 100% em poliéster, tecido de alta qualidade",
     "category": "Flamengo"
   },
   {
@@ -71,7 +72,7 @@
   },
   {
     "id": 9,
-    "name": "Camisa São Paulo 23/24",
+    "name": "Camisa São Paulo 22/23",
     "price": "139,90",
     "image": "https://kssports23.com.br/wp-content/uploads/2022/04/camisa-sao-paulo-branca-home-2022-2023-todos-patrocinadores-versao-torcedor-1.jpg",
     "category": "São Paulo"

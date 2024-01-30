@@ -4,6 +4,13 @@ import LogoBigWhite from "../../assets/logoBigWhite.png";
 import "./footer.css";
 
 const Footer = () => {
+  const TwitterLink = () => {
+    window.open("https://twitter.com/StarlineImports", "_blank");
+  };
+  const InstagramLink = () => {
+    window.open("https://twitter.com/StarlineImports", "_blank");
+  };
+
   return (
     <div className="footer-body row">
       <img className="logo-footer" src={LogoBigWhite} />
@@ -36,8 +43,12 @@ const Footer = () => {
           <div className="social-media-title">Redes Sociais</div>
           <div className="social-media-text">
             <div className="text">Tiktok</div>
-            <div className="text">Instagram</div>
-            <div className="text">Twitter</div>
+            <div className="text" onClick={InstagramLink}>
+              Instagram
+            </div>
+            <div className="text" onClick={TwitterLink}>
+              Twitter
+            </div>
           </div>
         </div>
       </div>
