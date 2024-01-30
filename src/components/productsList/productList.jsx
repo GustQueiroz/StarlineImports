@@ -1,9 +1,10 @@
+// ProductList.jsx
 import React, { useState, useEffect } from "react";
 import "./productList.css";
 import Product from "../product/product";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const ProductList = ({ listTitle, products }) => {
+const ProductList = ({ listTitle, selectedProducts }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1265);
 
   useEffect(() => {
@@ -52,16 +53,14 @@ const ProductList = ({ listTitle, products }) => {
     >
       <label className={textClass}>{listTitle}</label>
 
-      {products
-        .slice(0, isSmallScreen ? 3 : isMediumScreen ? 4 : 5)
-        .map((product, index) => (
-          <div
-            key={index}
-            className={`col-md-4 col-sm-12 mb-3 ${colClass} text-center`}
-          >
-            <Product productInfo={product} />
-          </div>
-        ))}
+      {selectedProducts.map((product, index) => (
+        <div
+          key={index}
+          className={`col-md-4 col-sm-12 mb-3 ${colClass} text-center`}
+        >
+          <Product productInfo={product} />
+        </div>
+      ))}
     </div>
   );
 };

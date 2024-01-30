@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderComponent from "../../components/Header/HeaderComponent";
 import { useParams } from "react-router-dom";
 import productData from "../../product.json";
 import "./productPage.css";
@@ -10,7 +11,6 @@ const ProductPage = () => {
   );
 
   if (!productInfo) {
-    // Handle the case where the product with the specified id is not found
     return <div>Produto não encontrado.</div>;
   }
 
@@ -21,6 +21,7 @@ const ProductPage = () => {
 
   return (
     <div>
+      <HeaderComponent />
       <img
         className="product-image"
         src={productInfo.image}

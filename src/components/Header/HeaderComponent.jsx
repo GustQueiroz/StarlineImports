@@ -8,7 +8,9 @@ const HeaderComponent = () => {
     <div className="full-header">
       <header className="first-header row col-lg-8">
         <div className="col-lg-3 col-sm-3 d-flex align-items-center justify-content-center col-12">
-          <img className="logo-image" src={LogoStarlineBlue} />
+          <Link to="/">
+            <img className="logo-image" src={LogoStarlineBlue} />
+          </Link>
         </div>
         <div className="row col-lg-4">
           <div className="col-xxl-12 col-xl-11 col-lg-10 col-md-8 d-flex flex-row justify-content-center align-items-center col-11">
