@@ -3,6 +3,7 @@ import { AreaComponentImage } from "./styled";
 import Kratos from "../../Assets/kratos.png";
 import Bluedemon from "../../Assets/bluedemon.png";
 import Apocalypse from "../../Assets/apocalypse.png";
+import BannerPalmeiras from "../../assets/palmeirasBanner.png";
 
 function ComponentImage() {
   const [leftPosition, setLeftPosition] = useState("100%");
@@ -24,9 +25,9 @@ function ComponentImage() {
   return (
     <AreaComponentImage>
       <div className="component_image" style={{ left: leftPosition }}>
-        <img id="first_image" src={Kratos} alt="Kratos" />
-        <img src={Bluedemon} alt="Bluedemon" />
-        <img src={Apocalypse} alt="Apocalypse" />
+        <img id="first_image" src={Bluedemon} alt="Santos" />
+        <img src={Apocalypse} alt="São Paulo" />
+        <img src={BannerPalmeiras} alt="Palmeiras" />
       </div>
     </AreaComponentImage>
   );

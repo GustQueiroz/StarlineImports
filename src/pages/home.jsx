@@ -9,6 +9,7 @@ function Home() {
     {
       id: 1,
       name: "Camisa III Santos 23/24",
+      oldPrice: "159,90",
       price: "124,90",
       image:
         "https://static.netshoes.com.br/produtos/camisa-santos-2023-uniforme-3-japao-numero-10-umbro-azul-marinho-vermelho/66/2IA-8546-066/2IA-8546-066_zoom1.jpg?ts=1698429324",
@@ -40,6 +41,13 @@ function Home() {
       price: "124,90",
       image:
         "https://www.desports.com.br/cdn/shop/files/imagem_2023-11-09_092035873.png?v=1699539640",
+    },
+    {
+      id: 10,
+      name: "Camisa Flamengo 23/24",
+      price: "124,90",
+      image:
+        "https://acdn.mitiendanube.com/stores/003/164/010/products/home-frente1-7de76489cdaf0de1e516848692252956-1024-1024.png",
     },
   ];
 

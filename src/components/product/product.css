@@ -4,8 +4,8 @@
   align-items: center;
   background-color: #f6f6f6;
   border-radius: 15px;
-  width: 15rem;
-  height: 20rem;
+  width: 18rem;
+  height: 22rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
 }
@@ -22,10 +22,22 @@
   margin-top: 0.5rem;
   color: #1e3c64;
 }
+.productOldPrice {
+  text-decoration: line-through;
+  margin-top: 12px;
+  margin-bottom: -15px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 107px;
+  color: #5e6874;
+}
 .product-price {
   font-weight: 600;
   margin-top: 0.5rem;
   font-size: 24px;
   margin-right: 70px;
   color: #1e3c64;
+}
+.productMargin {
+  margin-top: 20px;
 }

@@ -2,6 +2,9 @@ import React from "react";
 import "./product.css";
 
 const Product = ({ productInfo }) => {
+  const hasOldPrice =
+    productInfo.oldPrice !== undefined && productInfo.oldPrice !== null;
+
   return (
     <div className="product">
       <img
@@ -11,7 +14,12 @@ const Product = ({ productInfo }) => {
       />
       <label className="product-name">{productInfo.name}</label>
       <div></div>
-      <label className="product-price">R${productInfo.price}</label>
+      {productInfo.oldPrice && (
+        <label className="productOldPrice">R${productInfo.oldPrice}</label>
+      )}
+      <label className={`product-price ${!hasOldPrice ? "productMargin" : ""}`}>
+        R${productInfo.price}
+      </label>
     </div>
   );
 };
