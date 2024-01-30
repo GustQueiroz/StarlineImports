@@ -28,6 +28,7 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   color: #fff;
   margin-top: 40px;
+  margin-bottom: 10px;
   background-color: #217b29;
 }
 .register-text {
@@ -58,6 +59,8 @@
   align-items: center;
   font-size: 16px;
 }
-.submit-button {
-  margin-top: 30px;
+.forgot {
+  cursor: pointer;
+  margin-bottom: 20px;
+  opacity: 80%;
 }
