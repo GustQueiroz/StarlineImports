@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="company col-12 col-md-3">
-          <div className="company-title">Sobre a Empresa</div>
+          <div className="company-title">Quem somos?</div>
           <div className="company-text">
             <div className="text">Sobre nós</div>
             <div className="text">Colaboradores</div>

@@ -21,12 +21,12 @@ const ProductList = ({ listTitle, selectedProducts }) => {
   }, []);
 
   const [isMediumScreen, setIsMediumScreen] = useState(
-    window.innerWidth < 1345
+    window.innerWidth < 1750
   );
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMediumScreen(window.innerWidth < 1345);
+      setIsMediumScreen(window.innerWidth < 1750);
     };
 
     window.addEventListener("resize", handleResize);
@@ -53,14 +53,16 @@ const ProductList = ({ listTitle, selectedProducts }) => {
     >
       <label className={textClass}>{listTitle}</label>
 
-      {selectedProducts.map((product, index) => (
-        <div
-          key={index}
-          className={`col-md-4 col-sm-12 mb-3 ${colClass} text-center`}
-        >
-          <Product productInfo={product} />
-        </div>
-      ))}
+      {selectedProducts
+        .slice(0, isSmallScreen ? 3 : isMediumScreen ? 4 : 5)
+        .map((product, index) => (
+          <div
+            key={index}
+            className={`col-md-4 col-sm-12 mb-3 ${colClass} text-center`}
+          >
+            <Product productInfo={product} />
+          </div>
+        ))}
     </div>
   );
 };
