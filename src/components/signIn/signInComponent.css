@@ -27,9 +27,26 @@
 .button {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   color: #fff;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 10px;
   background-color: #217b29;
+}
+.button:hover {
+  background-color: #18591d;
+}
+.google-button {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: #1262ac;
+}
+.google-button:hover {
+  background-color: #125797;
+}
+
+.google-icon {
+  margin-right: 20px;
 }
 .register-text {
   color: #1e3c64;
@@ -42,9 +59,7 @@
 .register-text:hover {
   opacity: 100%;
 }
-.button:hover {
-  background-color: #18591d;
-}
+
 .centered {
   display: flex;
   justify-content: center;

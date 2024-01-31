@@ -25,7 +25,7 @@ function ComponentImage() {
   return (
     <AreaComponentImage>
       <div className="component_image" style={{ left: leftPosition }}>
-        <img id="first_image" src={Kratos} alt="Santos" />
+        <img id="first_image" src={Bluedemon} alt="Santos" />
         <img src={Apocalypse} alt="São Paulo" />
         <img src={BannerPalmeiras} alt="Palmeiras" />
       </div>
